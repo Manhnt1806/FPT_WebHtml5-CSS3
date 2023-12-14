@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+header {
+    text-align: center;
+    margin: 10px 0;
+}
+nav {
+    display: flex;
+    background-color: rgb(246, 240, 230);
+    line-height: 45px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul a{
+    display: block;
+    color: #484545;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: 0.5s;
+}
+nav ul a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+form {
+    padding-right: 15px;
+}
+form input{
+    width: 220px;
+    height: 30px;
+    border: 1px solid #333333;
+    outline: none;
+    padding-left: 3px;
+    transition: 0.5s;
+}
+form input:focus {
+    width: 260px;
+}
+form button{
+    border: none;
+    padding: 6px 10px;
+    box-shadow: 0 0 2px green;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.banner img{
+    width: 100%;
+    margin: 5px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+}
+.col {
+    width: calc(33.3333% - 16px);
+    margin-top: 20px;
+    margin-left: 16px;
+    padding: 10px;
+    border: 1px solid #999;
+    position: relative;
+    overflow: hidden;
+}
+.thumb {
+    overflow: hidden;
+}
+.thumb img{
+    width: 100%;  
+    transition: 0.5s;  
+}
+.thumb:hover img{
+    transform: scale(130%);
+}
+.col a {
+    color: #d92424;
+    text-decoration: none;
+}
+.new-content h3{
+    margin: 15px 0;
+}
+.new-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #fff;
+    transform: translate(-100%, 0);
+    transition: 0.5s;
+    /* Để nội dung vào giữa */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.col:hover .new-content{
+    transform: translate(0,0);
+}
+
+footer {
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(245, 215, 159);
+    margin-top: 20px;
+}
+
+/* ////hdbc */
+
+.cola {
+    width: calc(25% - 16px);
+    margin-top: 10px;
+    margin-left: 16px;
+    border: 1px solid #999999;
+    padding: 10px;
+}
+.thumba {
+    overflow: hidden;
+}
+.thumba img{
+    width: 100%;
+    transform: scale(100%);
+    transition: 1s;
+}
+.thumba:hover img {
+    /* transform: scale(120%); */
+    /* transform: rotate(90deg); */
+    /* transform: translate(-20px, 20px); */
+    transform: skew(25deg);
+}
+.cola a{
+    color: #333;
+    text-decoration: none;
+}
+.contenta h2:hover{
+    color: #999999;
+}
+/* Hiệu ứng đưa nội dung lên */
+.cola {
+    position: relative;
+    overflow: hidden;
+}
+.thumba {
+    padding-bottom: 60px;
+}
+.contenta {
+    position: absolute;
+    width: 100%;
+    /* bottom: -18%; */
+    left: 1px;
+    right: 0;
+    transform: translate(0, -60px);
+    padding: 10px;
+    background-color: rgb(248, 236, 236);
+    transition: 0.5s;
+}
+.contenta p{
+    padding-top: 20px;
+}
+.cola:hover .contenta {
+    /* bottom: 0; */
+    transform: translate(0, calc(10px - 100%));
+}

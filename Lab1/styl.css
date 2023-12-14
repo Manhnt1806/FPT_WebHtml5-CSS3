@@ -1,0 +1,211 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.headerImage{
+    margin: 0px 10%;
+    height: 20px;
+}
+.menu{
+    background-color: green;
+    text-align: center;
+    height: 40px;
+}
+.menu>ul{
+    margin: 0px;
+    display: inline-block;
+}
+.menu>ul>li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu>ul>li>a{
+    text-decoration: none;
+    font-weight: bold;
+    font-variant: small-caps;
+    color:white;
+    font-family: Arial, sans-serif;
+    line-height: 40px;
+}
+.menu>ul i{
+    color: white;
+    margin-left: 2px;
+}
+.menu>ul>li:hover{
+    background-color: orange;
+    
+}
+.menu ul ul {
+    position: absolute;
+    display: none;
+    width: 150px;
+    padding: 0px;
+    background-color: white;
+    box-shadow: 2px 2px 4px #ccc;
+}
+.menu ul ul li{
+   list-style: none;
+   padding: 0px ;
+}
+.menu ul ul a{
+    display: block;
+    font-variant: small-caps;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    padding: 10px;
+}
+.menu>ul>li:hover>ul{
+    display: block;
+}
+.menu ul ul  a:hover{
+    color: red;
+    background-color: #ccc;
+    border-left: 3px solid red;
+}
+
+.menu ul ul ul {
+    display: none; 
+    width: 187px;
+}
+
+.menu .fa-caret-right {
+    color: black;
+    margin-left: 1px;
+}
+.menu ul ul li{
+    position: relative;
+}
+
+.menu ul ul ul a:hover{
+    color: red;
+    background-color: #ccc;
+    border-left: 3px solid red;
+}
+
+.menu ul ul ul{
+    position: absolute;
+    left: 151px;
+    top: 0px;
+}
+
+.menu>ul>li>ul>li:hover>ul{
+    display: block;
+}
+.content{
+    margin: 10px 0;
+}
+.content .notification{
+    width: 25%;
+    float: left;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+.content .notification h3{
+    color:white;
+    padding: 10px 0px;
+    margin: 0px;
+    border-radius: 2px;
+    background-color: #444444;
+}
+.content .notification h3 i{
+    padding: 0 1px;
+}
+.content .notification ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.content .notification li {
+    padding: 5px 20px;
+    background-color: #efefef;
+    border-top: 1px solid #444444;
+}
+.content .notification a{
+    padding: 5px 0;
+    text-decoration: none;
+    font-family:  Arial, sans-serif;
+    color: #27b1db;
+}
+.content .notification a:hover{
+    color: red;
+}
+.content .notification p{
+    margin: 2%;
+    font-weight:bold
+}
+
+.activities{
+    width: 74%;
+    float: right;
+    display: inline-flex;
+}
+
+.activities .col{
+    width: 50%;
+    border: 1px solid green;
+    margin: 5px;
+    
+}
+.contentActivities{
+    display: inline-flex;
+}
+.activities .col p{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 16px;
+    margin: 0px;
+    background-color: green;
+    margin-bottom: 5px;
+}
+.col img{
+    width: 50%;
+    height: 50%;
+    margin-left: 5px ;
+}
+.col .text{
+    text-align: start;
+    margin: 0 5px;
+}
+.col .text a{
+   font-family:  Arial, sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+}
+.col .nav ul{
+    margin: 5px 0px ;
+    list-style: none;
+   padding: 0 10px;
+}
+.col .nav ul li{
+    padding: 5px 5px;
+}
+.col .nav ul a{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: 200px;
+    color: #444444;
+}
+
+.food{
+    clear: both;
+    text-align: center;
+    height: 200px;
+    background-color: green;
+}
+
+
+
+
+
+
+

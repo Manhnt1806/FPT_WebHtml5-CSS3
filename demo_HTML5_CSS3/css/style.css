@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 960px;
+    margin: 10px auto;
+}
+header{
+    text-align: center;
+    width: 100%;
+}
+nav{
+    background-color: orange;
+    line-height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul a{
+    display: block;
+    padding: 0 15px;
+    color: aliceblue;
+    text-decoration: none;
+}
+nav ul a:hover{
+    background-color: yellowgreen;
+    color: aliceblue;
+}
+form{
+    padding-right: 15px;
+}
+form input{
+    height: 30px;
+    width: 220px;
+}
+form button{
+    border: none;
+    padding: 6px 10px;
+    box-shadow: 0 0 3px yellowgreen;
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+.banner img{
+    width: 100%;
+    margin: 10px 0;
+    height: 250px;
+}
+.hot-new{
+    display: flex;
+    justify-content: space-between;
+}
+.hot-new img{
+    width: 49%;
+}
+.hot-new .hot-new-content{
+    width: 49%;
+}
+.hot-new-content a{
+    color: black;
+    text-decoration: none;
+}
+.hot-new-content a:hover{
+    color: blue;
+}
+.hot-new-content p{
+    padding: 10px 0;
+}
+.row{
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: -10px;
+
+}
+.col{
+    margin-top: 20px;
+    width: calc(33% - 10px);
+    margin-left: 10px;
+}
+.col img{
+    width: 100%;
+    height: 175px;
+}
+.col a{
+    color: black;
+    text-decoration: none; 
+}
+.col a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+footer{
+    line-height: 60px;
+    background-color: orange;
+    margin-top: 20px;
+    text-align: center;
+}
